@@ -17,9 +17,12 @@ header {
   margin: 0 auto;
 }
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
+}
+section.secondary {
+  background-color: #f8f8f8;
 }
 
 main {
@@ -43,6 +46,38 @@ main h3 {
   padding: 0;
   margin: 0;
 }
+main h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.secondary h2,
+h3 {
+  text-align: center;
+}
+.btn {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color: #462cb3;
+  padding: 16px 32px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.card {
+  margin: 30px 0px 30px 0px;
+  background-color: white;
+  box-shadow: 20px 20px 40px rgba(198, 198, 198, 0.2);
+}
+.card-text {
+  padding: 30px;
+}
 .grid {
   display: grid;
   grid-gap: 64px;
@@ -53,6 +88,9 @@ main h3 {
 }
 .footer-grid {
   grid-template-columns: 1fr 2fr 2fr;
+}
+.three-column-grid {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 footer {
   background-image: linear-gradient(
