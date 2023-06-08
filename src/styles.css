@@ -78,6 +78,9 @@ h3 {
 .card-text {
   padding: 30px;
 }
+.card-header.grid {
+  grid-gap: 0px;
+}
 .grid {
   display: grid;
   grid-gap: 64px;
@@ -166,9 +169,13 @@ header a {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
+  display: block;
 }
-
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
 @media (max-width: 960px) {
   header {
     padding: 60px 0;
@@ -188,5 +195,11 @@ header a {
   }
   section {
     padding: 30px;
+  }
+  .embed {
+    aspect-ratio: 16/9;
+  }
+  .card-header img {
+    display: none;
   }
 }
