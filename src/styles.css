@@ -148,7 +148,7 @@ header a {
     grid-template-columns: 1fr;
     grid-gap: 32px;
   }
-  .section {
+  section {
     padding: 30px;
   }
 }
